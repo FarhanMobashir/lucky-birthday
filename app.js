@@ -35,8 +35,18 @@ checkButton.addEventListener("click", function () {
   if (userBirthdate !== "" && luckyNumber !== "") {
     if (isLucky(userBirthdate, luckyNumber) === true) {
       output.innerText = `Wooho your birthdate is a lucky one`;
+      setTimeout(() => {
+        output.innerText = "";
+        birthdateInput.value = "";
+        luckyNumberInput.value = "";
+      }, 3000);
     } else if (isLucky(userBirthdate, luckyNumber) === false) {
       output.innerText = `Sorry , your birthdate is not a lucky one`;
+      setTimeout(() => {
+        output.innerText = "";
+        birthdateInput.value = "";
+        luckyNumberInput.value = "";
+      }, 3000);
     }
   }
 });
