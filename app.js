@@ -39,6 +39,8 @@ checkButton.addEventListener("click", function () {
         output.innerText = "";
         birthdateInput.value = "";
         luckyNumberInput.value = "";
+        userBirthdate = "";
+        luckyNumber = "";
       }, 3000);
     } else if (isLucky(userBirthdate, luckyNumber) === false) {
       output.innerText = `Sorry , your birthdate is not a lucky one`;
@@ -46,6 +48,8 @@ checkButton.addEventListener("click", function () {
         output.innerText = "";
         birthdateInput.value = "";
         luckyNumberInput.value = "";
+        userBirthdate = "";
+        luckyNumber = "";
       }, 3000);
     }
   }
